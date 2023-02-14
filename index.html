@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Urna - Javascript</title>
+</head>
+<body>
+	<section class="urna">
+		<div class="tela">
+			<div class="pt-1">
+				<div class="pt-1-left">
+					<div class="pt-1-1">
+						<span>SEU VOTO PARA:</span>
+					</div>
+					<div class="pt-1-2">
+						<span>PREFEITO</span>
+					</div>
+					<div class="pt-1-3">
+						<div class="numero pisca"></div>
+						<div class="numero"></div>
+					</div>
+					<div class="pt-1-4">
+						<span>Nome: Tiririca.</span>
+						<span>Partido: O Karina!</span>
+						<span>Vice-Prefeito: Z-Maguinho do Piauí.</span>
+					</div>					
+				</div>
+				<div class="pt-1-right">
+					<div class="pt-1-img">
+						<img src="img/presi_1.jpg" alt="">
+						<span>Prefeito.</span>
+					</div>
+					<div class="pt-2-img">
+						<img src="img/presi_2.jpg" alt="">
+						<span>Vice-Prefeito.</span>
+					</div>					
+				</div>				
+			</div>
+			<div class="pt-2">
+				<span>Aperte a tela:</span>
+				<br/>
+				<span>CONFIRMA para CONFIRMAR este voto!</span>
+				<br/>
+				<span>CORRIGE para REINICIAR este voto!</span>
+			</div>			
+		</div>
+		<div class="teclado">
+			<div class="teclado-linha">
+				<div class="tcl-btn" onclick="clicou('1')">1</div>
+				<div class="tcl-btn" onclick="clicou('2')">2</div>
+				<div class="tcl-btn" onclick="clicou('3')">3</div>
+			</div>
+			<div class="teclado-linha">
+				<div class="tcl-btn" onclick="clicou('4')">4</div>
+				<div class="tcl-btn" onclick="clicou('5')">5</div>
+				<div class="tcl-btn" onclick="clicou('6')">6</div>
+			</div>
+			<div class="teclado-linha">
+				<div class="tcl-btn" onclick="clicou('7')">7</div>
+				<div class="tcl-btn" onclick="clicou('8')">8</div>
+				<div class="tcl-btn" onclick="clicou('9')">9</div>
+			</div>
+			<div class="teclado-linha">
+				<div class="tcl-btn" onclick="clicou('0')">0</div>
+			</div>
+			<div class="teclado-linha">
+				<div class="tcl-btn branco" onclick="branco()">BRANCO</div>
+				<div class="tcl-btn amarelo" onclick="corrige()">CORRIGE</div>				
+				<div class="tcl-btn verde" onclick="confirma()">CONFIRMA</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="etapas.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
